@@ -99,7 +99,7 @@ public class GridAdapter extends RecyclerView.Adapter<GridAdapter.GridViewHolder
                     selecionados.add(position);
                 }
                 listener.onBookCliecked(view);
-                notifyDataSetChanged();
+                notifyItemChanged(position);
             }
         }
 
