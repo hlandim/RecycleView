@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Toast;
@@ -30,6 +31,8 @@ public class MainActivity extends AppCompatActivity implements GridAdapter.GridA
         grid = (RecyclerView) findViewById(R.id.grid);
 
         RecyclerView.LayoutManager gridLayoutManager = new GridLayoutManager(this, 3);
+//        Se quiser fazer com uma lista
+//        RecyclerView.LayoutManager gridLayoutManager = new LinearLayoutManager(this);
         grid.setLayoutManager(gridLayoutManager);
 
         books = createBooks();
